@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#statbar {
+  color: black;
+  width: 0px;
+  background: black;
+  border-right: solid grey 300px;
+  border-radius: 25px;
+  font-size: 0.01em;
+  height: 15px;
+  opacity: 0.8;
+  margin: auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#percent {
+  text-align: center;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
