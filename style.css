@@ -11,6 +11,7 @@
   opacity: 0.8;
   margin: auto;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -33,4 +34,21 @@ tr:nth-child(even) {
 
 * {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+main {
+  display: none;
+}
+
+.usernameinput {
+    width: 70%;
+    border-radius: 40px;
+    height: 40px;
+}
+
+#usernameinfo {
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 200px;
 }
