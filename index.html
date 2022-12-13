@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en" dir="ltr">
+    <head>
     <title>Grade Report</title>
       <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
-  <body>
-    <h1>
+  <body><br><br><br>
+      <div id="s1">
+        <h1 id="heading1">Please input your PIN</h1>
+          <form action="check.html" method="GET"></form>
+            <input type="password" id="input" class="usernameinput" placeholder="Input your PIN here" oninput="pinInput(this.value)" onchange="pinInput(this.value)" required>    
+          </form>  
+      </div>
+      <main id="main">
+      <h1>
       Grade Report
     </h1>
       <p>
@@ -62,5 +70,6 @@
   </tr>
 </table>
         </div>
+        </main>
   </body>
 </html>
