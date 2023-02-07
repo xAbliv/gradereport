@@ -9,6 +9,10 @@
 
 //dont touch anything below this line
 
+window.onload = function() {
+  alert("Hi there! This system is having work done and as a result you may not be able to access your grades. We apologise and will be back up and running in no time!")
+}
+
 const inputField = document.getElementById("input");
 const desiredHashValue = "f0f06e6a36f7cb803c295c948c8597932fe6854dbaf3bb81945ce4adb9724c7a";
 
