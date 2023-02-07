@@ -9,7 +9,7 @@
 
 //dont touch anything below this line
 
-const inputField = document.querySelector("#inputField");
+const inputField = document.getElementById("input");
 const desiredHashValue = "f0f06e6a36f7cb803c295c948c8597932fe6854dbaf3bb81945ce4adb9724c7a";
 
 inputField.addEventListener("input", function hash () {
