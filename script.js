@@ -9,22 +9,26 @@
 
 //dont touch anything below this line
 
-const input = document.getElementById("input");
-const output = document.getElementById("output");
+const inputField = document.querySelector("#inputField");
+const desiredHashValue = "f0f06e6a36f7cb803c295c948c8597932fe6854dbaf3bb81945ce4adb9724c7a";
 
-input.addEventListener("input", function () {
-  inputnonhash = parseFloat(value);
-  const hash = CryptoJS.SHA256(input.value).toString();
-  alert(hash);
-  if (hash === "350C94D619F6ABA3379500FF11BFCCA6E58B0AFE5B3624D0AD56FA607845E38C") {
-    document.getElementById("s1").style.display = "none";
-    document.getElementById("main").style.display = "block";
-  }
+inputField.addEventListener("input", function hash () {
+  const text = inputField.value;
+  const hash = CryptoJS.SHA256(text).toString();
 });
 
-function runFunction() {
-  document.getElementById("s1").style.display = "none";
-  document.getElementById("main").style.display = "block";
-}
+
+inputField.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    const text = inputField.value;
+    const hash = CryptoJS.SHA256(text).toString();
+    if (hash === desiredHashValue) {
+      document.getElementById("s1").style.display = "none";
+      document.getElementById("main").style.display = "block";
+    } else {
+      alert("The pin you entered is not valid.");
+    }
+  }
+});
 
 // oninput="pinInput(this.value)" onchange="pinInput(this.value)"

@@ -11,7 +11,7 @@
       <div id="s1">
         <h1 id="heading1">Please input your PIN</h1>
           <form action="check.html" method="GET"></form>
-            <input type="password" id="input" class="usernameinput" placeholder="Input your PIN here" required>    
+            <input type="password" id="input" class="usernameinput" placeholder="Input your PIN here" oninput="hash()" onchange="hash()" required>    
           </form>  
           <div style="display:none;" id="output"></div>
       </div>
