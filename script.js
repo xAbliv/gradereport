@@ -13,6 +13,7 @@ const input = document.getElementById("input");
 const output = document.getElementById("output");
 
 input.addEventListener("input", function () {
+  inputnonhash = parseFloat(value);
   const hash = CryptoJS.SHA256(input.value).toString();
   alert(hash);
   if (hash === "350C94D619F6ABA3379500FF11BFCCA6E58B0AFE5B3624D0AD56FA607845E38C") {
