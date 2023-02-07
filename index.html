@@ -5,13 +5,15 @@
       <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script>
   </head>
   <body><br><br><br>
       <div id="s1">
         <h1 id="heading1">Please input your PIN</h1>
           <form action="check.html" method="GET"></form>
-            <input type="password" id="input" class="usernameinput" placeholder="Input your PIN here" oninput="pinInput(this.value)" onchange="pinInput(this.value)" required>    
+            <input type="password" id="input" class="usernameinput" placeholder="Input your PIN here" required>    
           </form>  
+          <div style="display:none;" id="output"></div>
       </div>
       <main id="main">
       <h1>
