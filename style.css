@@ -2,9 +2,9 @@
 
 #statbar {
   color: black;
-  width: 175.41px;
+  width: 300px;
   background: black;
-  border-right: solid grey 124.59px;
+  border-right: solid grey 0px;
   border-radius: 25px;
   font-size: 0.01em;
   height: 15px;
