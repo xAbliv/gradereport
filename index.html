@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grade Report</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
 </head>
 
 <body>
@@ -16,8 +14,8 @@
     <br>
     <div id="s1">
         <h1 id="heading1">Please Input Your PIN</h1>
-        <input placeholder="Enter Text Here..." class="textInput usernameinput" type="password" id="textInput"
-            oninput="updateHash()">
+        <input placeholder="Input PIN" class="textInput usernameinput" type="password" id="textInput"
+            oninput="pinInput(this.value)" onchange="pinInput(this.value)"
         <script src="script.js"></script>
     </div>
     <main id="main">
