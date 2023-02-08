@@ -1,38 +1,12 @@
-// function pinInput(valNum) {
-//   valNum = parseFloat(valNum);
+const textInput = document.getElementById("textInput");
 
-//   if (valNum === 8347) {
-//     document.getElementById("s1").style.display = "none";
-//     document.getElementById("main").style.display = "block";
-//   }
-// }
-
-//dont touch anything below this line
-
-window.onload = function() {
-  alert("Hi there! This system is having work done and as a result you may not be able to access your grades. We apologise and will be back up and running in no time!")
-}
-
-const inputField = document.getElementById("input");
-const desiredHashValue = "f0f06e6a36f7cb803c295c948c8597932fe6854dbaf3bb81945ce4adb9724c7a";
-
-inputField.addEventListener("input", function hash () {
-  const text = inputField.value;
-  const hash = CryptoJS.SHA256(text).toString();
-});
-
-
-inputField.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    const text = inputField.value;
-    const hash = CryptoJS.SHA256(text).toString();
-    if (hash === desiredHashValue) {
-      document.getElementById("s1").style.display = "none";
-      document.getElementById("main").style.display = "block";
+function updateHash() {
+    const input = textInput.value;
+    const hash = CryptoJS.SHA256(input).toString();
+    if (hash === "350c94d619f6aba3379500ff11bfcca6e58b0afe5b3624d0ad56fa607845e38c") {
+        document.getElementById("s1").style.display = "none";
+        document.getElementById("main").style.display = "block";
     } else {
-      alert("The pin you entered is not valid.");
+        return null;
     }
-  }
-});
-
-// oninput="pinInput(this.value)" onchange="pinInput(this.value)"
+}

@@ -1,78 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grade Report</title>
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script>
-  </head>
-  <body><br><br><br>
-      <div id="s1">
-        <h1 id="heading1">Please input your PIN</h1>
-          <form></form>
-          <!--  action="check.html" method="GET" -->
-            <input type="password" id="input" class="usernameinput" placeholder="Input your PIN here" oninput="hash(this.value)" onchange="hash(this.value)" required>    
-          </form>  
-          <div style="display:none;" id="output"></div>
-      </div>
-      <main id="main">
-      <h1>
-      Grade Report
-    </h1>
-      <p>
-        Mathavan, Shyamalan
-      </p>
-      <br><br>
-      <h2 id="percent">
-      40%
-      </h2>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div id="s1">
+        <h1 id="heading1">Please Input Your PIN</h1>
+        <input placeholder="Enter Text Here..." class="textInput usernameinput" type="password" id="textInput"
+            oninput="updateHash()">
+        <script src="script.js"></script>
+    </div>
+    <main id="main">
+        <h1>
+            Grade Report
+        </h1>
+        <p>
+            Mathavan, Shyamalan
+        </p>
+        <br><br>
+        <h2 id="percent">
+            40%
+        </h2>
         <div id="statbar">
-        |
+            |
         </div>
         <br><br>
         <div id="overview">
-          <h2>
-          Overview
-          </h2>
-          <table>
-  <tr>
-    <th>Assignment/Assessment</th>
-    <th>Score</th>
-    <th>Date</th>
-  </tr>
-  <tr>
-    <td>Heart Questions</td>
-    <td>8/20</td>
-    <td>2/7/2023</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+            <h2>
+                Overview
+            </h2>
+            <table>
+                <tr>
+                    <th>Assignment/Assessment</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Heart Questions</td>
+                    <td>8/20</td>
+                    <td>2/7/2023</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
-        </main>
-  </body>
+    </main>
+</body>
+
 </html>
